@@ -4,13 +4,16 @@
  * @module
  */
 
-import { parseNALU, sliceNALUs, NALUType, decodeRBSP, RawNALU } from "../NalUnits.js"
+import { parseNALU, sliceNALUs, NALUType, decodeRBSP } from "../NalUnits.js"
+import type { RawNALU } from "../NalUnits.js"
 import SetManager from "../SetManager.js"
 
 import { SEIMessageType } from "./MessageType.js"
-import { parseSEI, RawSEIMessage } from "./Message.js"
+import { parseSEI } from "./Message.js"
+import type { RawSEIMessage } from "./Message.js"
 import { parseUserDataUnregistered } from "./UserDataUnregistered.js"
-import { parsePictureTiming, parsePictureTimingOptionsFromSPS, PictureTimingParseOptions } from "./PictureTiming.js"
+import { parsePictureTiming, parsePictureTimingOptionsFromSPS } from "./PictureTiming.js"
+import type { PictureTimingParseOptions } from "./PictureTiming.js"
 
 export interface SEIExtractorOptions {
 	/** behavior on parsing errors. override `handleError` for finer control (default: log) */

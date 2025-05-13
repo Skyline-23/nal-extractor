@@ -4,8 +4,10 @@
  * @module
  */
 
-import { parseSPS, SPS, validateSPSId } from "./SPS.js"
-import { parsePPS, PPS, validatePPSId } from "./PPS.js"
+import { parseSPS, validateSPSId } from "./SPS.js"
+import type { SPS } from "./SPS.js"
+import { parsePPS, validatePPSId } from "./PPS.js"
+import type { PPS } from "./PPS.js"
 import { NALUType, parseNALU, decodeRBSP } from "./NalUnits.js"
 import BitReader from "./BitReader.js"
 

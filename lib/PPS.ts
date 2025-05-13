@@ -6,7 +6,8 @@
 
 import BitReader from "./BitReader.js"
 import { moreRBSPData, validateRBSPTrailing } from "./NalUnits.js"
-import { parseScalingMatrix, ScalingMatrix } from "./SPS.js"
+import { parseScalingMatrix } from "./SPS.js"
+import type { ScalingMatrix } from "./SPS.js"
 
 export function validatePPSId(n: number) {
 	if (n === (n >>> 0) && n < (1 << 8))

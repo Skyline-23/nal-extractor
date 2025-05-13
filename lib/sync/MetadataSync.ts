@@ -11,7 +11,8 @@
  */
 
 import { startRvfc } from "./RequestFrame.js"
-import { attachMetadataExtractor, AttachRtpScriptTransformOptions, MessageData, RtpScriptTransformServiceCallback, startMetadataExtractorService } from "./RtpScriptTransform.js"
+import { attachMetadataExtractor, startMetadataExtractorService } from "./RtpScriptTransform.js"
+import type { AttachRtpScriptTransformOptions, MessageData, RtpScriptTransformServiceCallback } from "./RtpScriptTransform.js"
 import JitterBuffer from "./JitterBuffer.js"
 
 type WrappedMeta<Meta> = { ts: number, metadata: Meta }
