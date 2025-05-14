@@ -1,6 +1,6 @@
 {
-  "name": "nal-extractor",
-  "version": "1.0.1",
+  "name": "ts5-nal-extractor",
+  "version": "1.0.0",
   "keywords": [
     "h264",
     "bitstream",
@@ -45,13 +45,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/medooze/nal-extractor.git"
+    "url": "git+https://github.com/Skyline-23/nal-extractor"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/medooze/nal-extractor/issues"
-  },
-  "homepage": "https://github.com/medooze/nal-extractor#readme",
+  "homepage": "https://github.com/Skyline-23/nal-extractor#readme",
   "jest": {
     "preset": "ts-jest/presets/default-esm",
     "transform": {
